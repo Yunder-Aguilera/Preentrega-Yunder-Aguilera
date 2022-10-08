@@ -1,0 +1,11 @@
+@mixin texto ($fontsize, $interlineado, $color) {
+    font-size: $fontsize;
+    line-height: $interlineado;
+    color: $color;
+}
+
+@mixin flex ($justify, $width) {
+    display: flex;
+    justify-content: $justify;
+    width: $width;
+}

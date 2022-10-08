@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    background: $principalColor;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------PÁGINA INDEX----------- */
+
+/*--------- header ---------*/
+    .hbienvenida{
+        display: flex;
+        background-image: $animacionColor;
+        color: $colortext;
+        font-size: $textSm;
+        padding: 0.2em;      
+    }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*---------- Nav ----------*/
+nav{ 
+    background-color: $navfooColor;
+}
+
+    .hlogo{
+        width: 20em;
+        height: auto;
+    }
+
+    #navnav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+            #navbarNav ul{
+                list-style: none;
+
+                    li{
+                        padding: 0 1em;
+                        margin: 0.2em;
+                        font-size: 2em; 
+                    }
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            background-color: black;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            &:hover{
+                                background-color: $colorsub2;
+                            } 
+                        }
+
+            }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+                
+/*---------- Contenido ----------*/
+#containerini{
+    @include flex(space-around, 100%)
+}
+
+    .ivi{
+        width: 700px;
+        height: 800px;
+
+        .ivim{
+            width: 100%;
+            height: 100%;
+            padding: 4em;  
+        }
+    }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*----------- footer ----------*/
+    footer{
+        text-align: center;
+        background-color: $navfooColor;
+        border-top: solid 1px $colorsub1;
+        margin-top: 5%;
+    }
+
+        .footer-h{
+            color: $colortext;
+            font-size: $textSm;
+            margin: 0.5em;
+        }
+
+            .pie-página{
+                list-style: none;
+                padding: 1em;
+                margin: 2em;
+
+                li{
+                    display: inline;
+                    padding: 1.5em;
+                }
+            }
+
+
+
